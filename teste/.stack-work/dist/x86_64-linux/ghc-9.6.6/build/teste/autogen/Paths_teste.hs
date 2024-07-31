@@ -46,12 +46,12 @@ getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: 
 
 
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
-bindir     = "/home/guilherme/Documents/dev/haskell/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/bin"
-libdir     = "/home/guilherme/Documents/dev/haskell/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/lib/x86_64-linux-ghc-9.6.6/teste-0.1.0.0-EVUvSCuxlZn92a8cmYJIMp-teste"
-dynlibdir  = "/home/guilherme/Documents/dev/haskell/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/lib/x86_64-linux-ghc-9.6.6"
-datadir    = "/home/guilherme/Documents/dev/haskell/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/share/x86_64-linux-ghc-9.6.6/teste-0.1.0.0"
-libexecdir = "/home/guilherme/Documents/dev/haskell/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/libexec/x86_64-linux-ghc-9.6.6/teste-0.1.0.0"
-sysconfdir = "/home/guilherme/Documents/dev/haskell/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/etc"
+bindir     = "/home/guilherme/Documents/dev/haskell/classes/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/bin"
+libdir     = "/home/guilherme/Documents/dev/haskell/classes/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/lib/x86_64-linux-ghc-9.6.6/teste-0.1.0.0-EVUvSCuxlZn92a8cmYJIMp-teste"
+dynlibdir  = "/home/guilherme/Documents/dev/haskell/classes/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/lib/x86_64-linux-ghc-9.6.6"
+datadir    = "/home/guilherme/Documents/dev/haskell/classes/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/share/x86_64-linux-ghc-9.6.6/teste-0.1.0.0"
+libexecdir = "/home/guilherme/Documents/dev/haskell/classes/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/libexec/x86_64-linux-ghc-9.6.6/teste-0.1.0.0"
+sysconfdir = "/home/guilherme/Documents/dev/haskell/classes/teste/.stack-work/install/x86_64-linux/971b47df6904b295c84a35813240b146f4a8f8d4aa4799604d65a91a1decbf5d/9.6.6/etc"
 
 getBinDir     = catchIO (getEnv "teste_bindir")     (\_ -> return bindir)
 getLibDir     = catchIO (getEnv "teste_libdir")     (\_ -> return libdir)
