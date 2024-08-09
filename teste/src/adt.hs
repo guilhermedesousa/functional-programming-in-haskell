@@ -146,4 +146,19 @@ oeste = Right (Right ())
 
 -- Zippers
 
-data List a = Empty | Cons a (List a)
+-- data List a = Empty | Cons a (List a)
+
+-- Classes de Tipo
+
+data Jogada = Pedra | Papel | Tesoura
+    deriving (Show, Eq)
+
+ganhaDe :: Jogada -> Jogada -> Bool
+Pedra `ganhaDe` Papel   = False
+Papel `ganhaDe` Tesoura = False
+Tesoura `ganhaDe` Pedra = False
+j1 `ganhaDe` j2 | j1 == j2  = False
+                | otherwise = True
+
+perdeDe :: Jogada -> Jogada -> Bool
+j1 `perdeDe` j2 = not $ j1 `ganhaDe` j2
