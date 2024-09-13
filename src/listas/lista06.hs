@@ -216,16 +216,16 @@ empilha x = MudaLista $ \l -> (x:l, ())
 instance Functor MudaLista where
     fmap g (MudaLista f) = MudaLista $ \l -> fmap g (f l)
 
-instance Applicative MudaLista where
-    pure x = MudaLista $ \l -> (l, x)
-    (MudaLista fx) <*> (MudaLista f) =
-        MudaLista $ \l ->
-            let (l1, fab) = fx l
-                (l2, a) = f l1
-            in (l2, fab a)
+-- instance Applicative MudaLista where
+--     pure x = MudaLista $ \l -> (l, x)
+--     (MudaLista fx) <*> (MudaLista f) =
+--         MudaLista $ \l ->
+--             let (l1, fab) = fx l
+--                 (l2, a) = f l1
+--             in (l2, fab a)
 
-desempilhaVarios :: Int -> MudaLista [Int]
-desempilhaVarios n = sequenceA (replicate n desempilha)
+-- desempilhaVarios :: Int -> MudaLista [Int]
+-- desempilhaVarios n = sequenceA (replicate n desempilha)
 
-empilhaVarios :: [Int] -> MudaLista ()
-empilhaVarios = traverse_ empilha
+-- empilhaVarios :: [Int] -> MudaLista ()
+-- empilhaVarios = traverse_ empilha
